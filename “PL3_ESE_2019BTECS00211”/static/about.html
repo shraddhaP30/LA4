@@ -1,0 +1,251 @@
+﻿<!DOCTYPE html>
+
+<html>
+
+<head>
+	
+<title>bootstrap magic</title>
+
+	<meta charset="utf-8">
+	
+<meta name="viewport" content="width=device-width initial-scale=1">
+	
+<link rel="stylesheet" type="text/css" href="./css/style.css">
+
+	
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+
+	
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+	
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+
+	
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+  
+  
+ <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+ rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" 
+crossorigin="anonymous">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
+	
+<link href="style.css" rel="stylesheet">
+
+</head>
+<body>
+	<Style>
+	body
+    {
+	background-color: #4C4B4B;
+    }
+    .nav-item a
+ 
+   {
+    	color: #67E6DC;
+    }
+    .content
+    {
+    	background-color:#2F363F;
+    	color: #01CBC6;
+    
+	overflow: hidden;
+    	backface-visibility: hidden;
+    	text-align: center;
+    	border-radius: 10px;
+    
+	font-family: Georgia;
+    }
+    span
+    {
+        border-bottom:1px solid #fff;
+        font-size: 25px;
+        color: #ffffff;
+    }
+   
+ .content div
+    {
+    	padding: 20px 25px 5px;
+    	display: none;
+
+    }
+    input
+    {
+
+    }
+    label
+    {
+    	color: #EA7773;
+    
+	display: inline-block;
+    	font-weight: 600;
+    	text-align: center;
+    	border-bottom: 1px solid transparent;
+    
+	padding: 10px;
+    	transition: all .3s ease-in-out 0.1s;
+    	margin: 10px;
+    	font-family: Times Header;
+
+    }
+    
+label:hover
+    {
+    	display:;
+    	color: #fff;
+    	cursor: pointer;
+    	
+
+
+    }
+    input:checked +label
+    {
+    	background-color: 
+	color: #fd7034;
+    	border-bottom: 1px solid;
+    }
+    #tab-1:checked ~ .content .content-1,
+    #tab-2:checked ~ .content .content-2,
+  
+  #tab-3:checked ~ .content .content-3,
+    #tab-4:checked ~ .content .content-4
+    {
+    	display: block;
+    	animation-name: inUp;
+    	
+animation-timing-function: ease-in-out;
+    	animation-duration: .6s;
+    }
+ @media (min-width: 481px) and (max-width: 767px) 
+    {
+  . label
+ 
+   {
+        color: #EA7773;
+        display: inline-block;
+        font-weight: 600;
+        text-align: left;
+        border-bottom: 1px solid transparent;
+     
+   padding: 0px;
+        transition: all .3s ease-in-out 0.1s;
+        margin: auto;
+        font-family: Times Header;
+
+    }
+
+    }
+
+/* 
+  ##Device = Most of the Smartphones Mobiles (Portrait)
+  ##Screen = B/w 320px to 479px
+*/
+
+@media (min-width: 320px) and (max-width: 480px) 
+   {
+  
+label
+    {
+        color: #EA7773;
+        display: inline-block;
+        font-weight: 600;
+        text-align: left;
+        border-bottom: 1px solid transparent;
+        padding: 0px;
+        transition: all .3s ease-in-out 0.1s;
+        margin: auto;
+        font-family: Times Header;
+
+    }
+  
+   }   
+
+    @keyframes inUp
+    {
+    	0%
+    	{
+    		opacity: 0;
+    		transform: translatey(100px);
+    	}
+    	90%
+    	{
+    		transform: translatey(-10px);
+    	}
+    	100%{
+
+    		opacity: 1;
+    		transform: translatey(0);
+    	}
+    }
+   
+
+
+</Style>
+<!-- navigation -->
+<nav class="navbar navbar-dark navbar-expand-sm bg-dark ">
+	<a href="../index.html" class="navbar-brand mr-auto ml-auto">My Appoinment</a>
+	<div class="container-fluid">
+		<button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navresponsive">
+			<span class="navbar-toggler-icon"></span>
+		</button>
+		<div class="collapse navbar-collapse" id="navresponsive">
+			<ul class="navbar-nav  ">
+                <!-- <li class="nav-item active"><a href="index.html" class="nav-link ">Home</a></li> -->
+                <li class="nav-item"><a href="patient_register.html" class="nav-link ">sign in</a><ul class="ulnav">
+                    <!-- <li><a href="registeration.html">AS a Patient</a></li>
+                    <li><a href="registeration2.html">As a Doctor</a></li> -->
+                </ul></li>
+                <li class="nav-item"><a href="../php/patient_module/patient_login.php" class="nav-link ">Log in</a><ul class="ulnav">
+                    <!-- <li><a href="login.php">AS a Patient</a></li>
+                    <li><a href="login2.html">As a Doctor</a></li> --></ul></li> 
+                <li class="nav-item"><a href="about.html" class="nav-link active">About us</a></li>
+                <!-- <li class="nav-item"><a href="#" class="nav-link">Home</a></li>
+                <li class="nav-item"><a href="#" class="nav-link">Home</a></li>
+                <li class="nav-item"><a href="#" class="nav-link">Home</a></li> -->
+
+            </ul>
+		</div>
+		
+	</div>
+
+</nav>
+<!-- <br> -->
+<!-- <center><h1 class=" animated fadeInDown spancolor" style="font-family:  comic sans Ms">About us</h1></center> -->
+<div class="container-fluid " style="background-color:#2C3335;">
+
+    
+	<center><input id="tab-1" type="radio" name="tab" checked>
+	<label for=""></label>
+
+	<input  id="tab-2"  type="radio" name="tab" >
+	<label for=""></label>
+
+	<input id="tab-3" type="radio" name="tab" >
+	<label for=""></label>
+    
+    <div class="content">
+    	<div class="content-1">
+    		<h3></h3>
+    		<p>
+Ganpati Hospital - Jalgaon
+N.H.No.6, Pi.No.327,328, Akashwani Chauk, Vidya Nagar, Jalgaon., Jalgaon, Maharashtra - 425001</p>
+  <p>Ganpati  Hospital is a Registered Charity under the Charities Acts (Registered Charity No. 20000394) and is administered and managed in accordance with a Hospital Constitution approved by the Charities Regulatory Authority.  The current Hospital Constitution was approved in 2018.  The property is vested in Trustees.
+
+The Hospital has a total of 99 beds – 89 In-Patient beds and 10 Day Care beds. The In-Patient specialties are General Medicine, General Surgery and Gynaecology. We also have an Urgent Care Centre incorporating a Local Injuries Unit and Medical Assessment Unit.
+
+Other services include:
+
+Consultant Out-Patient Clinics
+Diagnostic Radiological and Laboratory services
+Day Surgery
+Clinical Nurse Specialists in the areas of Diabetes, Continence Management, Respiratory Care, Health Promotion, Infection Control, Palliative Care and Pain Management
+A dietetic service providing nutritional assessment, dietary advice, education and evaluation
+Physiotherapy and Pharmacy services
+Chaplaincy Service
+Mission Statement</p>  	</div>
+
+    </div>
+</center>
+</div>
+
